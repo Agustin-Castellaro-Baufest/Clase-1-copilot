@@ -1,0 +1,171 @@
+/* WelcomePage.module.css — PlayStation design system */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-canvas-dark);
+}
+
+/* ---- Primary nav ---- */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 var(--space-xl);
+  background-color: var(--color-canvas-dark);
+  border-bottom: 1px solid var(--color-hairline-dark);
+}
+
+.navLogo {
+  font-size: var(--text-body-strong-size);
+  font-weight: var(--text-body-strong-weight);
+  color: var(--color-on-dark);
+  letter-spacing: 0.4px;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.navUser {
+  font-size: var(--text-caption-md-size);
+  color: var(--color-on-dark-mute);
+}
+
+.btnLogout {
+  height: 36px;
+  padding: 0 var(--space-lg);
+  background: transparent;
+  color: var(--color-on-dark);
+  font-family: var(--font-family);
+  font-size: var(--text-button-md-size);
+  font-weight: var(--text-button-md-weight);
+  letter-spacing: var(--text-button-md-tracking);
+  border: 1px solid var(--color-hairline-dark);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.btnLogout:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* ---- Hero band — dark canvas ---- */
+.heroBand {
+  background-color: var(--color-canvas-dark);
+  padding: var(--space-section) var(--space-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.heroContent {
+  max-width: 720px;
+  width: 100%;
+}
+
+.heroEyebrow {
+  font-size: var(--text-caption-sm-size);
+  font-weight: var(--text-caption-sm-weight);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.heroTitle {
+  font-size: var(--text-display-xl-size);
+  font-weight: var(--text-display-xl-weight);
+  line-height: var(--text-display-xl-lh);
+  color: var(--color-on-dark);
+  margin-bottom: var(--space-lg);
+}
+
+.heroBody {
+  font-size: var(--text-body-md-size);
+  font-weight: var(--text-body-md-weight);
+  line-height: var(--text-body-md-lh);
+  color: var(--color-body-dark);
+}
+
+/* ---- Info section — dark elevated surface ---- */
+.infoSection {
+  background-color: var(--color-surface-dark-elevated);
+  padding: var(--space-xxl) var(--space-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.infoCard {
+  max-width: 720px;
+  width: 100%;
+  background-color: var(--color-surface-dark-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-hairline-dark);
+}
+
+.cardHeading {
+  font-size: var(--text-heading-lg-size);
+  font-weight: var(--text-heading-lg-weight);
+  color: var(--color-on-dark);
+  margin-bottom: var(--space-lg);
+}
+
+.tokenList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.tokenRow {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-hairline-dark);
+}
+
+.tokenRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tokenRow dt {
+  font-size: var(--text-caption-md-size);
+  font-weight: var(--text-caption-sm-weight);
+  color: var(--color-on-dark-mute);
+  align-self: start;
+  padding-top: 2px;
+}
+
+.tokenRow dd {
+  font-size: var(--text-caption-md-size);
+  color: var(--color-on-dark);
+}
+
+.tokenValue {
+  word-break: break-all;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: var(--color-link-dark);
+}
+
+/* ---- Footer band — PlayStation Blue ---- */
+.footer {
+  background-color: var(--color-primary);
+  padding: var(--space-xxl) var(--space-xl);
+  text-align: center;
+  margin-top: auto;
+}
+
+.footerText {
+  font-size: var(--text-caption-md-size);
+  font-weight: var(--text-caption-md-weight);
+  color: var(--color-on-primary);
+}
