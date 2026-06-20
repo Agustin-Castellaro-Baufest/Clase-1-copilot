@@ -1,0 +1,66 @@
+# ============================================================
+# Backend – Python / Poetry
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+*.env
+.env.local
+
+# Poetry
+poetry.lock
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy / ruff
+.mypy_cache/
+.ruff_cache/
+
+# ============================================================
+# Frontend – Node / Vite / React
+# ============================================================
+node_modules/
+dist/
+dist-ssr/
+*.local
+package-lock.json
+yarn.lock
+
+# Vite cache
+.vite/
+
+# package manager locks (keep only one — uncomment as needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================================
+# IDEs & editors
+# ============================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
